@@ -2,8 +2,8 @@ Objective:
 Mobile application for users to register as a tax applicant.
 
 ###### Technologies and Tools:
-⋅⋅* Java
+* Java
 
-⋅⋅* SQL
+* SQL
 
-⋅⋅* Android Studio
+* Android Studio
