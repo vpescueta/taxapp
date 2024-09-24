@@ -1,6 +1,6 @@
 ###### Objective and functionality: 
 * Mobile application for users to register as a tax applicant.
-* Admin user to view status of tax application of user and change the status of based on assessment
+* Admin user can view status of tax application of user and change the status of based on assessment
 * View the location of a user using Google Map
 
 ###### Technologies and Tools:
