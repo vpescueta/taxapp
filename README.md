@@ -7,4 +7,4 @@
 * Java
 * SQL
 * Android Studio
-* Google Map Api
+* Google Map API
