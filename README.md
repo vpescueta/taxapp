@@ -16,6 +16,9 @@ Login Page
 
 <img width="353" alt="image" src="https://github.com/user-attachments/assets/be3980d3-2890-4c42-8de6-b3b94cd16fb9">
 
+Customer Registration: 
+
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/35552512-d713-4c84-882d-e1d889342347">
 
 Sample Customer Profile:
 
@@ -25,7 +28,5 @@ Integration with Google Map, Location Services invoked:
 
 <img width="367" alt="image" src="https://github.com/user-attachments/assets/25c52ed6-fe4f-492c-b22d-b54f7b7aed92">
 
-Customer Registration: 
 
-<img width="380" alt="image" src="https://github.com/user-attachments/assets/35552512-d713-4c84-882d-e1d889342347">
 
