@@ -20,3 +20,12 @@ Login Page
 Sample Customer Profile:
 
 <img width="344" alt="image" src="https://github.com/user-attachments/assets/1de3f943-7b22-481b-a0da-87a12ebbf187">
+
+Integration with Google Map, Location Services invoked:
+
+<img width="367" alt="image" src="https://github.com/user-attachments/assets/25c52ed6-fe4f-492c-b22d-b54f7b7aed92">
+
+Customer Registration: 
+
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/35552512-d713-4c84-882d-e1d889342347">
+
