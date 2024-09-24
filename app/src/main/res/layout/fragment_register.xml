@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_register"
+    tools:context=".RegisterFragment">
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fl_sign_in_overlay_bg"-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="700dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:background="@color/october_mist_transparent" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llayout_registration"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginEnd="50dp">-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_customer_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/sandy_nude"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/tv_reg_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/tv_reg_create_account" />
+        
+        <ScrollView
+                android:id="@+id/sv_customer_screen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/llayout_customer_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_enter_username"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:minHeight="50dp"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_username" />
+
+
+
+                            <EditText
+                                android:id="@+id/et_reg_username"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:minHeight="50dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_email_address"
+                                android:inputType="textEmailAddress"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_password"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_password"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_password"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_password"
+                                android:inputType="textPassword"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_firstname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_firstname"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_firstname"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_firstname"
+                                android:inputType="text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_lastname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_lastname"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_lastname"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_lastname"
+                                android:inputType="text"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_email"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_email"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_email"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_email_address"
+                                android:inputType="textEmailAddress"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_street"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_street"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_street"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_street"
+                                android:inputType="textPostalAddress"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_suite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_suite"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_suite"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_suite"
+                                android:inputType="textPostalAddress"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_city"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_city"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_city"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_city"
+                                android:inputType="textPostalAddress"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_zipcode"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_zipcode"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_zipcode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_zipcode"
+                                android:inputType="textPostalAddress"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_phone"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_phone"
+                                android:inputType="phone"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_website"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_website"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_website"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_website"
+                                android:inputType="textWebEditText"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_reg_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_company_name"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_company_name"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_company_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:hint="@string/et_reg_enter_company_name"
+                                android:inputType="text"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_reg_company_catch_phrase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_company_catch_phrase"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_company_catch_phrase"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_company_catch_phrase"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_catch_phrase"
+                                android:inputType="text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_reg_company_bs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tv_reg_company_bs"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="@string/tv_reg_enter_company_bs"/>
+
+                            <EditText
+                                android:id="@+id/et_reg_company_bs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/circle_1"
+                                android:textAlignment="center"
+                                android:minHeight="50dp"
+                                android:textColorHint="#0D47A1"
+                                android:textSize="12sp"
+                                android:hint="@string/et_reg_enter_bs"
+                                android:inputType="text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_reg_btns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/btn_reg_cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/tangerine_orange"
+                                android:text="@string/btn_reg_cancel"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="15dp"
+                                android:layout_gravity="center_vertical"/>
+
+                            <Button
+                                android:id="@+id/btn_reg_register"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/tangerine_orange"
+                                android:text="@string/btn_reg_register"
+                                android:layout_weight="1"
+                                android:layout_marginStart="15dp"
+                                android:layout_gravity="center_vertical"/>
+                        </LinearLayout>
+        </LinearLayout>
+
+
+        </ScrollView>
+        
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>

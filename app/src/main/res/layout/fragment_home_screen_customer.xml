@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreenCustomerFragment">
+
+    <include
+        android:id="@+id/inc_home_customer_header"
+        layout="@layout/top_user_profile"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cutomer_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/sandy_nude"
+        app:cardCornerRadius="12dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_cust_home_screen_create_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".85"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/tv_cust_home_screen_customer_profile"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_cust_home_screen_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.15"
+                android:backgroundTint="@color/tangerine_orange"
+
+                android:text="Edit"
+                />
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/sv_customer_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:id="@+id/llayout_home_screen_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_enter_username"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:text="@string/tv_reg_enter_username"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_username"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_firstname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_firstname"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_firstname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:paddingStart="16dp"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_lastname"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_email"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_email"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_street"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_street"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_suite"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_suite"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_suite"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_city"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_city"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_zip_code"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_zip_code"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_zip_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_phone"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_website"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_website"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reg_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_company_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_company_name"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_company_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:minHeight="50dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reg_company_catch_phrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_company_catch_phrase"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_company_catch_phrase"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_company_catch_phrase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reg_company_bs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_cust_home_screen_company_bs"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_reg_enter_company_bs"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/et_reg_company_bs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/circle_1"
+                        android:minHeight="50dp"
+                        android:textColorHint="#0D47A1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

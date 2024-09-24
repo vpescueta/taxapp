@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">MyTaxApp</string>
+    <string name="tv_login_new_user_create_account">New user? Create your account now.</string>
+    <string name="et_login_password">Password</string>
+    <string name="et_login_username">Username</string>
+    <string name="btn_login_register">Register</string>
+    <string name="btn_login_login">Login</string>
+    <string name="tv_reg_create_account">Create your account</string>
+    <string name="tv_reg_enter_username">Username: </string>
+    <string name="tv_reg_enter_password">Password: </string>
+
+
+    <string name="tv_reg_enter_firstname">First Name: </string>
+    <string name="tv_reg_enter_lastname">Last Name: </string>
+    <string name="tv_reg_enter_email">Email: </string>
+    <string name="tv_reg_enter_street">Street: </string>
+    <string name="tv_reg_enter_suite">Suite: </string>
+    <string name="tv_reg_enter_city">City: </string>
+    <string name="tv_reg_enter_zipcode">Zipcode: </string>
+    <string name="tv_reg_enter_phone">Phone: </string>
+    <string name="tv_reg_enter_website">Website: </string>
+    <string name="tv_reg_enter_company_name">Company Name: </string>
+    <string name="tv_reg_enter_company_catch_phrase">Catch Phrase: </string>
+    <string name="tv_reg_enter_company_bs">BS: </string>
+    <string name="et_reg_enter_email_address">must provide a valid email address</string>
+    <string name="et_reg_enter_password">must be min. of 8 characters length</string>
+    <string name="et_reg_enter_firstname">legal first name</string>
+    <string name="et_reg_enter_lastname">legal last name</string>
+    <string name="et_reg_enter_street">home street address</string>
+    <string name="et_reg_enter_suite">home suite address</string>
+    <string name="et_reg_enter_city">home city</string>
+    <string name="et_reg_enter_zipcode">must be 6 characters</string>
+    <string name="et_reg_enter_phone">10 digit phone number excluding country code</string>
+    <string name="et_reg_enter_website">must be a valid domain name i.e., @gmail.com</string>
+    <string name="et_reg_enter_company_name">must not exceed 30 characters in length</string>
+    <string name="et_reg_enter_catch_phrase">must not exceed 30 characters in length</string>
+    <string name="et_reg_enter_bs">must not exceed 30 characters in length</string>
+
+    <string name="btn_reg_register">Register</string>
+    <string name="btn_reg_cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_cust_home_screen_customer_profile">Customer Profile</string>
+    <string name="tv_home_admin_customers">Customers:</string>
+    <string name="iv_img_desc">my pic</string>
+    <string name="tv_reg_enter_zip_code">"Zip Code: "</string>
+
+
+    <string-array name="process_status">
+        <item>awaited</item>
+        <item>failedtoreach</item>
+        <item>onboarded</item>
+        <item>inprocess</item>
+        <item>completed</item>
+        <item>denied</item>
+    </string-array>
+
+
+</resources>
